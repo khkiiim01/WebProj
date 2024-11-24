@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendation Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>Maps</header>
+  <div class="search-container">
+    <input type="text" id="place-input" placeholder="검색할 장소를 입력하세요">
+    <button onclick="searchPlace()">검색</button>
+  </div>
+  
+  <div id="map" style="height: 500px; width: 100%;"></div>
+  <div id="places-list" class="places-list"></div>
+  
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdGdA5lTQB4xSZ0uMnOGDQd98SezHRIeo&libraries=places&callback=initMap" loading="lazy" async defer></script>
+</body>
+</html>

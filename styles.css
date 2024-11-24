@@ -1,0 +1,72 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f4f8; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007bff; 
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5em;
+  }
+  
+  #map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px;
+  }
+
+  #place-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .places-list {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .place-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .place-item:hover {
+    background-color: #f0f4f8;
+  }
+  
