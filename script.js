@@ -38,11 +38,11 @@ function searchPlace() {
 
       results.forEach((place, index) => {
         // 검색 결과에 마커 추가
-        // const marker = new google.maps.Marker({
-        //   position: place.geometry.location,
-        //   map: map,
-        //   title: place.name,
-        // });
+        const marker = new google.maps.Marker({
+          position: place.geometry.location,
+          map: map,
+          title: place.name,
+        });
 
         // 명소 리스트에 추가
         const placeItem = document.createElement("div");
