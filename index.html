@@ -12,10 +12,21 @@
   <div class="search-container">
     <input type="text" id="place-input" placeholder="검색할 장소를 입력하세요">
     <button onclick="searchPlace()">검색</button>
+    <button onclick="clearMarkers()">마커 지우기</button>
   </div>
   
   <div id="map" style="height: 500px; width: 100%;"></div>
   <div id="places-list" class="places-list"></div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-details">
+        <!-- 명소 상세 정보 표기 -->
+      </div>
+    </div>
+  </div>
+
   
   <script src="script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdGdA5lTQB4xSZ0uMnOGDQd98SezHRIeo&libraries=places&callback=initMap" loading="lazy" async defer></script>
