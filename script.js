@@ -26,7 +26,6 @@ function initMap() {
     findPlaceByLocation(clickedLocation);
   });
 }
-
 window.initMap = initMap;
 
 function searchPlace() {
@@ -162,6 +161,7 @@ function findPlaceByLocation(location) {
   const request = {
     location: location,
     radius: 500, // 반경 500미터 내 장소 검색
+    type: ["restaurant", "cafe", "tourist_attraction"],
   };
 
   service.nearbySearch(request, (results, status) => {
@@ -182,7 +182,7 @@ function findPlaceByLocation(location) {
 
       // 지도 중심 및 줌 레벨 설정
       map.setCenter(results[0].geometry.location);
-      // map.setZoom(15);
+      map.setZoom(20);
 
       console.log(`클릭한 위치에서 가까운 장소: ${results[0].name}`);
     } else {
